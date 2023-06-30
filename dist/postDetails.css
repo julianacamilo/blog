@@ -63,7 +63,7 @@ header {
     
     .post-details {
         width: 70vw;
-        height: 950px;
+        height: 1050px;
         margin: 0 auto;
         padding-top: 6.5em;
   
@@ -109,12 +109,14 @@ header {
         margin-top: 10px;
         font-size: 13px;
         color: #575757;
+        margin-right: 20px;
+
       }
       
       .comments-list{
         position: absolute;
         width: 762px;
-        height: 340px;
+        height: 400px;
         left: 300px;
         top: 700px;
         background: #fff;
@@ -161,6 +163,7 @@ header {
       .comments-list p {
      color:#575757;
         display: inline;
+        
       }
       /*--------------------------------div---------------------------*/
 

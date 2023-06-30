@@ -48,7 +48,6 @@ header {
     left: 105px;
     top: 167px;
     font: 600 36px/20px 'Inter', sans-serif;
-    
     letter-spacing: 0.1em;
     color: #3A4F9A;
     display: flex;
@@ -78,6 +77,8 @@ header {
 
 
 
+
+
 .post-container {
   display: flex;
   flex-wrap: wrap;
@@ -103,16 +104,17 @@ header {
 .post {
   width: 350px;
   height: 60%;
-  position: relative;
   overflow: hidden;
+  object-fit: contain;
+
 }
 
 .post img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+ 
   transition: transform 0.3s ease;
-  display: block;
+ 
 }
 
 .post:hover img {
@@ -163,6 +165,8 @@ header {
   height: 5px; 
   border-bottom-right-radius: 8px;
 }
+
+
 
 
 

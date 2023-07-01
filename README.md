@@ -25,13 +25,16 @@ List of comments with:
 
 ## Page
 > <strong> Página inicial do blog: <strong>
-> 
-![pag1](https://github.com/julianacamilo/blog/assets/104179960/22e0a894-c0b4-4492-8a42-46efbf52424d)
-![pag2](https://github.com/julianacamilo/blog/assets/104179960/bc7aa7c1-162c-4fa4-b234-6ef6cfdf7abf)
+![pag1](https://github.com/julianacamilo/blog/assets/104179960/f7e9624f-d3a8-4629-89b8-e925bdf8af8e)
+
+![pag2](https://github.com/julianacamilo/blog/assets/104179960/63a5b3a1-b9e2-46a6-9d03-03b846a66014)
+
+
 
 > <strong> Uma das postagens: <strong> 
 
 ![Pag3](https://github.com/julianacamilo/blog/assets/104179960/9193384a-61d2-4e5c-bfbe-6194a799dcd8)
+
 ![pag4](https://github.com/julianacamilo/blog/assets/104179960/1c00c010-c3ca-4297-9018-2075e0ce4607)
 
 <p align="center">

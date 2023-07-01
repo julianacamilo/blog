@@ -32,7 +32,7 @@ List of comments with:
 
 > <strong> Uma das postagens: <strong>
 
-<img src="/readme/pag3.jpg"/>
+<img src="/readme/Pag3.jpg"/>
 <img src="/readme/pag4.jpg"/>
 
 <p align="center">

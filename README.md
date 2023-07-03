@@ -37,9 +37,9 @@ List of comments with:
 > <img src="/readme/pag2.jpg"/>
 
 > <strong> One of the posts: <strong>
-
-<img src="/readme/Pag3.jpg"/>
-<img src="/readme/pag4.jpg"/>
+>
+> <img src="/readme/Pag3.jpg"/>
+> <img src="/readme/pag4.jpg"/>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=FINISHED&color=GREEN&style=for-the-badge"/>

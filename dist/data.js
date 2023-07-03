@@ -1,5 +1,5 @@
 "use strict";
-const publicacoes = [
+const publications = [
     {
         id: 1,
         title: "Cyber Security",
@@ -249,19 +249,19 @@ function createPostElement(post) {
     const title = document.createElement('div');
     title.className = 'title';
     title.textContent = post.title;
-    const paragrafo = document.createElement('div');
-    paragrafo.className = 'paragraph';
-    paragrafo.textContent = post.body;
+    const paragraph = document.createElement('div');
+    paragraph.className = 'paragraph';
+    paragraph.textContent = post.body;
     const limiteCaracteres = 100;
     if (post.body.length > limiteCaracteres) {
-        paragrafo.textContent = post.body.substring(0, limiteCaracteres);
+        paragraph.textContent = post.body.substring(0, limiteCaracteres);
     }
     else {
-        paragrafo.textContent = post.body;
+        paragraph.textContent = post.body;
     }
     postLink.appendChild(postImage);
     postLink.appendChild(title);
-    postLink.appendChild(paragrafo);
+    postLink.appendChild(paragraph);
     postElement.appendChild(postLink);
     const expandLink = document.createElement('a');
     expandLink.className = 'expand';
@@ -279,7 +279,7 @@ function renderPosts() {
     const postContainer = document.querySelector('.post-container');
     if (!postContainer)
         return;
-    for (const post of publicacoes) {
+    for (const post of publications) {
         const postElement = createPostElement(post);
         postContainer.appendChild(postElement);
     }
@@ -297,7 +297,7 @@ function getPostIdFromURL() {
 }
 //The getPostById function takes a post ID as an argument and searches within the posts array for the corresponding post object with the same ID.
 function getPostById(postId) {
-    return publicacoes.find((post) => post.id === postId);
+    return publications.find((post) => post.id === postId);
 }
 //The renderPostDetails function renders the details of a specific post on the page. It takes the post ID from the URL, fetches the matching post, and builds the HTML structure from the post details, including the image, title, body, and list of comments. It then adds the constructed HTML elements to the page element responsible for displaying the post details. The function is called to perform rendering when the page is loaded.
 function renderPostDetails() {

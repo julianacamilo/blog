@@ -1,20 +1,20 @@
 //creates a data structure to store information about posts and comments related to different topics.
-interface Postagens {
+interface Posts {
     id: number;
     title: string;
     imageUrl: string;
     body: string;
-    comments: Comentario[];
+    comments: Comments[];
   }
   
-  interface Comentario {
+  interface Comments{
     id: number;
     postId: number;
     email: string;
     body: string;
   } 
   
-  const publicacoes: Postagens[] = [
+  const publications: Posts[] = [
     {
       id: 1,
       title: "Cyber Security",
@@ -256,7 +256,7 @@ interface Postagens {
 
   //This function creates an HTML element that represents a post. It takes a post object of type Posts as an argument and returns an HTML element that contains information about the post.
   
-  function createPostElement(post: Postagens): HTMLElement {
+  function createPostElement(post: Posts): HTMLElement {
     const postElement = document.createElement('div');
     postElement.className = 'card-post';
   
@@ -274,15 +274,15 @@ interface Postagens {
     title.className = 'title';
     title.textContent = post.title;
   
-    const paragrafo = document.createElement('div');
-    paragrafo.className = 'paragraph';
-    paragrafo.textContent = post.body;
+    const paragraph = document.createElement('div');
+    paragraph.className = 'paragraph';
+    paragraph.textContent = post.body;
     const limiteCaracteres = 100; 
 
     if (post.body.length > limiteCaracteres) {
-      paragrafo.textContent = post.body.substring(0, limiteCaracteres) ;
+      paragraph.textContent = post.body.substring(0, limiteCaracteres) ;
     } else {
-      paragrafo.textContent = post.body;
+      paragraph.textContent = post.body;
     }
  
 
@@ -290,7 +290,7 @@ interface Postagens {
   
     postLink.appendChild(postImage);
     postLink.appendChild(title);
-    postLink.appendChild(paragrafo);
+    postLink.appendChild(paragraph);
   
     postElement.appendChild(postLink);
   
@@ -316,7 +316,7 @@ interface Postagens {
     const postContainer = document.querySelector('.post-container');
     if (!postContainer) return;
   
-    for (const post of publicacoes) {
+    for (const post of publications) {
       const postElement = createPostElement(post);
       postContainer.appendChild(postElement);
     }
@@ -337,8 +337,8 @@ interface Postagens {
   
 
   //The getPostById function takes a post ID as an argument and searches within the posts array for the corresponding post object with the same ID.
-  function getPostById(postId: number): Postagens | undefined {
-    return publicacoes.find((post) => post.id === postId);
+  function getPostById(postId: number): Posts | undefined {
+    return publications.find((post) => post.id === postId);
   }
   
 

@@ -1,6 +1,6 @@
 <h1 align="center"> Blog - Compass </h1>
 
-## project requirements
+## Project requirements
 
 Introduction
 Thinking about a project that has a list of "Posts," each containing an image, title, and
@@ -31,12 +31,12 @@ List of comments with:
 
 ## Page
 
-> <strong> Página inicial do blog: <strong>
+> <strong> Blog homepage: <strong>
 >
 > <img src="/readme/pag1.jpg"/>
 > <img src="/readme/pag2.jpg"/>
 
-> <strong> Uma das postagens: <strong>
+> <strong> One of the posts: <strong>
 
 <img src="/readme/Pag3.jpg"/>
 <img src="/readme/pag4.jpg"/>

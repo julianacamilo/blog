@@ -29,6 +29,16 @@ List of comments with:
 - CSS
 - HTML
 
+## Functionalities 
+
+- A dynamic generation of cards in TypeScript that involves creating visual elements on the page based on a set of data. In this case, cards represent posts and are displayed both on the homepage and on a post-specific page. Cards are generated according to the number of available objects and display information such as title, image and body text. When clicking on a card, the user is redirected to the page of the corresponding post, where he can see its full content, including related comments. This approach provides an interactive experience, allowing users to explore different posts and their details.
+
+## Run the project 
+
+- Clone this repository on your machine;
+- Open the index.html file in your browser;
+- Take the opportunity to explore the cards and navigate between them.
+
 ## Page
 
 > <strong> Blog homepage: <strong>

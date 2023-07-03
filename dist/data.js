@@ -231,7 +231,7 @@ const publicacoes = [
 ];
 //This function redirects the user to a specific page of a post based on the provided ID.
 function redirectToPostPage(postId) {
-    const url = `post.html?id=${postId}`;
+    const url = `postDetails.html?id=${postId}`;
     window.location.href = url;
 }
 //This function creates an HTML element that represents a post. It takes a post object of type Posts as an argument and returns an HTML element that contains information about the post.
@@ -250,7 +250,7 @@ function createPostElement(post) {
     title.className = 'title';
     title.textContent = post.title;
     const paragrafo = document.createElement('div');
-    paragrafo.className = 'paragrafo';
+    paragrafo.className = 'paragraph';
     paragrafo.textContent = post.body;
     const limiteCaracteres = 100;
     if (post.body.length > limiteCaracteres) {
@@ -266,7 +266,7 @@ function createPostElement(post) {
     const expandLink = document.createElement('a');
     expandLink.className = 'expand';
     expandLink.textContent = 'Expand...';
-    expandLink.href = `post.html?id=${post.id}`;
+    expandLink.href = `postDetails.html?id=${post.id}`;
     postElement.appendChild(expandLink);
     postLink.addEventListener('click', function (event) {
         event.preventDefault();

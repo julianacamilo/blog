@@ -250,7 +250,7 @@ interface Postagens {
 
   //This function redirects the user to a specific page of a post based on the provided ID.
   function redirectToPostPage(postId: number): void {
-    const url = `post.html?id=${postId}`;
+    const url = `postDetails.html?id=${postId}`;
     window.location.href = url;
   }
 
@@ -275,7 +275,7 @@ interface Postagens {
     title.textContent = post.title;
   
     const paragrafo = document.createElement('div');
-    paragrafo.className = 'paragrafo';
+    paragrafo.className = 'paragraph';
     paragrafo.textContent = post.body;
     const limiteCaracteres = 100; 
 
@@ -297,7 +297,7 @@ interface Postagens {
     const expandLink = document.createElement('a');
     expandLink.className = 'expand';
     expandLink.textContent = 'Expand...';
-    expandLink.href = `post.html?id=${post.id}`;
+    expandLink.href = `postDetails.html?id=${post.id}`;
   
     postElement.appendChild(expandLink);
   

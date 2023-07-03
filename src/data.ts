@@ -1,3 +1,4 @@
+//creates a data structure to store information about posts and comments related to different topics.
 interface Postagens {
     id: number;
     title: string;
@@ -247,10 +248,13 @@ interface Postagens {
   ];
   
 
+  //This function redirects the user to a specific page of a post based on the provided ID.
   function redirectToPostPage(postId: number): void {
     const url = `post.html?id=${postId}`;
     window.location.href = url;
   }
+
+  //This function creates an HTML element that represents a post. It takes a post object of type Posts as an argument and returns an HTML element that contains information about the post.
   
   function createPostElement(post: Postagens): HTMLElement {
     const postElement = document.createElement('div');
@@ -305,6 +309,8 @@ interface Postagens {
   
     return postElement;
   }
+
+  //The renderPosts function is responsible for rendering the posts on the page. It loops through an array of posts and for each post, it calls the createPostElement function to create the corresponding HTML element. Then the post element is added as a child of a container element on the page. This function is called to display the posts on the page.
   
   function renderPosts(): void {
     const postContainer = document.querySelector('.post-container');
@@ -318,6 +324,7 @@ interface Postagens {
   
   renderPosts();
   
+  // The getPostIdFromURL function gets the post ID from the current page URL. It parses the query portion of the URL to extract the value of the "id" parameter.
   function getPostIdFromURL(): number | null {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -329,11 +336,13 @@ interface Postagens {
   }
   
 
+  //The getPostById function takes a post ID as an argument and searches within the posts array for the corresponding post object with the same ID.
   function getPostById(postId: number): Postagens | undefined {
     return publicacoes.find((post) => post.id === postId);
   }
   
 
+//The renderPostDetails function renders the details of a specific post on the page. It takes the post ID from the URL, fetches the matching post, and builds the HTML structure from the post details, including the image, title, body, and list of comments. It then adds the constructed HTML elements to the page element responsible for displaying the post details. The function is called to perform rendering when the page is loaded.
   function renderPostDetails(): void {
     const postId = getPostIdFromURL();
     if (postId === null) {

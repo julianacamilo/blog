@@ -1,6 +1,6 @@
-<h1 align="center"> Blog </h1>
+<h1 align="center"> Blog - Compass </h1>
 
-## Requisitos do projeto
+## project requirements
 
 Introduction
 Thinking about a project that has a list of "Posts," each containing an image, title, and
@@ -22,6 +22,12 @@ List of comments with:
 • postId - number
 • email - text
 • body – text
+
+## Technologies Used
+
+- Typescript
+- CSS
+- HTML
 
 ## Page
 

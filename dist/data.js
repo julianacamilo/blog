@@ -252,9 +252,9 @@ function createPostElement(post) {
     const paragraph = document.createElement('div');
     paragraph.className = 'paragraph';
     paragraph.textContent = post.body;
-    const limiteCaracteres = 100;
-    if (post.body.length > limiteCaracteres) {
-        paragraph.textContent = post.body.substring(0, limiteCaracteres);
+    const LimitCharacters = 100;
+    if (post.body.length > LimitCharacters) {
+        paragraph.textContent = post.body.substring(0, LimitCharacters);
     }
     else {
         paragraph.textContent = post.body;

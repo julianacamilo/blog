@@ -410,9 +410,13 @@ for (const comment of post.comments) {
   commentItem.className = 'comment-item';
 
   const userId = document.createElement('div');
-  userId.className = 'user-id';
-  userId.textContent = '' + comment.id + ':';
-  commentItem.appendChild(userId);
+userId.className = 'user-id';
+const emailParts = comment.email.split('@');
+const emailPart = emailParts[0];
+
+userId.textContent = emailPart + ':';
+commentItem.appendChild(userId);
+
 
   const userEmail = document.createElement('Strong');
   userEmail.textContent = comment.email;
